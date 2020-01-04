@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark">
+    <include android:id="@+id/include2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/custom_toolbar" />
+     <LinearLayout
+         android:orientation="vertical"
+          android:background="@drawable/bottom_corner_top"
+         android:layout_width="match_parent"
+         android:layout_height="50dp">
+         <com.google.android.material.tabs.TabLayout
+             android:id="@+id/tabs"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             app:tabGravity="fill"
+             app:tabIndicatorColor="@color/colorPrimaryDark"
+             app:tabMode="scrollable"
+             app:tabTextAppearance="@style/MyCustomTabText" />
+     </LinearLayout>
+    <LinearLayout
+        android:weightSum="3"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+      android:layout_gravity="center_horizontal"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingRight="@dimen/_10sdp"
+
+        android:layout_height="wrap_content">
+        <Spinner
+            android:id="@+id/spinner"
+            style="@style/spinner_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:overlapAnchor="false" />
+        <Spinner
+            android:id="@+id/spinner1"
+            style="@style/spinner_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:overlapAnchor="false" />
+        <Spinner
+            android:id="@+id/spinner2"
+            style="@style/spinner_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:overlapAnchor="false" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/special_receipe" />
+    </LinearLayout>
+    <TextView
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:textSize="@dimen/_10sdp"
+        android:fontFamily="@font/segoe_ui_bold"
+        android:textColor="@color/colorWhite"
+        android:text="@string/special_course"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

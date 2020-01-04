@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:fontFamily="@font/segoe_ui_regular"
+        android:id="@+id/name"
+        android:padding="@dimen/_3sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="hello" />
+    <LinearLayout
+        android:background="@drawable/bottom_list_border"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"/>
+
+</LinearLayout>

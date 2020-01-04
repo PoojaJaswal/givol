@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".ContestHolderActivity">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/linear_layout1"
+        android:background="@drawable/top_corner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_96sdp">
+         <RelativeLayout
+             android:orientation="horizontal"
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/_70sdp"
+             android:weightSum="3">
+             <ImageView
+                 android:layout_marginTop="@dimen/_15sdp"
+                 android:id="@+id/imageViewHolder"
+                 android:background="@drawable/ic_reply"
+                 android:padding="@dimen/_15sdp"
+                 android:clickable="true"
+                 android:layout_width="@dimen/_20sdp"
+                 android:layout_height="@dimen/_20sdp"
+                 android:layout_marginLeft="@dimen/_10sdp"
+                 android:layout_alignParentLeft="true"
+                 android:layout_marginStart="@dimen/_10sdp"
+                 android:layout_alignParentStart="true" />
+             <LinearLayout
+           android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:id="@+id/l1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_toRightOf="@+id/imageView">
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/_18sdp"
+            android:fontFamily="@font/segoe_ui_bold"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/name_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CONTEST" />
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/_12sdp"
+            android:fontFamily="@font/segoe_ui_bold"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/name_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:text="@string/xl_pizza_plus" />
+    </LinearLayout>
+    </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/relative_1"
+        android:padding="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_layout1">
+    <TextView
+        android:textSize="@dimen/_12sdp"
+        android:fontFamily="@font/segoe_ui_bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time Remaining"
+        android:layout_centerInParent="true" />
+</RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:padding="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_1">
+    <TextView
+        android:textSize="@dimen/_34sdp"
+        android:fontFamily="@font/segoe_ui_bold"
+        android:textColor="@color/colorGreen"
+        android:id="@+id/mytextview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$55"
+        android:layout_alignParentLeft="true" />
+    <TextView
+        android:textSize="@dimen/_25sdp"
+        android:fontFamily="@font/segoe_ui_bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/mytextview3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="02:15:34"
+        android:layout_centerInParent="true" />
+    <TextView
+        android:textSize="@dimen/_18sdp"
+        android:fontFamily="@font/segoe_ui_bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/mytextview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:text="30/50"
+        android:layout_alignParentRight="true" />
+</RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/RelativeLayout02"
+        android:padding="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RelativeLayout01">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true" />
+    <TextView
+        android:textSize="@dimen/_12sdp"
+        android:fontFamily="@font/segoe_ui_regular"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contest Holder"
+        android:layout_centerInParent="true" />
+    <TextView
+        android:textSize="@dimen/_12sdp"
+        android:fontFamily="@font/segoe_ui_regular"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="POINTS"
+        android:layout_alignParentRight="true" />
+</RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/RelativeLayout03"
+        android:padding="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RelativeLayout02">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycer_view"
+        android:layout_width="match_parent"
+         android:layout_height="match_parent" />
+</RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/drawerView"
+    android:background="@drawable/rounded_corner_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="5">
+    <RelativeLayout
+        android:id="@+id/customToolbarLayout"
+        android:background="@drawable/bottom_corner_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_90sdp">
+        <ImageView
+            android:id="@+id/imageMenu1"
+            android:background="@drawable/ic_back_purple"
+            android:padding="@dimen/_15sdp"
+            android:clickable="true"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:textSize="@dimen/_16ssp"
+            android:textColor="@color/colorGreen"
+            android:gravity="center"
+            android:id="@+id/textHomeBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/actionbarHeight"
+            android:layout_toRightOf="@+id/imageMenu1"
+            android:layout_centerHorizontal="false"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/actionbarHeight"
+            android:layout_toEndOf="@+id/imageMenu1" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/linear_header"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_55sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_below="@+id/imageMenu1">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:src="@drawable/pizza"
+                app:civ_border_color="@color/colorWhite"
+                app:civ_border_width="@dimen/_2sdp"/>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_margin="@dimen/_5sdp">
+                <TextView
+                    android:fontFamily="@font/segoe_ui_bold"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SHOAIB OPU" />
+                <TextView
+                    android:fontFamily="@font/segoe_ui_regular"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="shoaibib@gmail.com" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/drawerList"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:divider="@null"
+        android:dividerHeight="0dp" />
+    <LinearLayout
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp" />
+    <ListView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/drawerList1"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:layout_weight="3.5" />
+    <TextView
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="right"
+        android:textColor="@color/colorWhite"
+        android:fontFamily="@font/segoe_ui_regular"
+        android:textSize="@dimen/_10sdp"
+        android:layout_width="wrap_content"
+        android:text="VERSION 1.1.1"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

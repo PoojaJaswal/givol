@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignUpActivity">
+    <LinearLayout android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <TextView android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_30sdp"
+            android:text="Create Account"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="@font/segoe_ui_bold"
+            android:layout_marginTop="@dimen/_30sdp"
+             />
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/messageTextInputLayout"
+                style="@style/MyTextInputLayout"
+                android:layout_width="@dimen/_222sdp"
+                android:layout_height="wrap_content"
+
+                app:boxCornerRadiusBottomEnd="@dimen/_20sdp"
+                app:boxCornerRadiusTopEnd="@dimen/_20sdp"
+                app:boxCornerRadiusBottomStart="@dimen/_20sdp"
+                app:boxCornerRadiusTopStart="@dimen/_20sdp"
+                app:hintTextAppearance="@style/GreenTextInputLayout"
+
+                android:layout_margin="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/nameTextInputEditText"
+                    android:layout_width="@dimen/_222sdp"
+                    android:layout_height="wrap_content"
+                    android:hint="USER NAME"
+                    style="@style/MyTextInputEditText"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:fontFamily="@font/segoe_ui_regular"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/text_input_layout_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                style="@style/MyTextInputLayout"
+                app:hintTextAppearance="@style/GreenTextInputLayout"
+                app:passwordToggleEnabled="true"
+                android:paddingLeft="20dp"
+                app:passwordToggleTint="@color/colorPrimaryDark"
+                >
+
+                <EditText
+
+                    android:layout_gravity="center_horizontal"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    style="@style/MyTextInputEditText"
+                    android:id="@+id/etPassword"
+                    android:layout_width="@dimen/_222sdp"
+                    android:layout_height="wrap_content"
+                    android:hint="PASSWORD"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:inputType="textPassword"
+                    android:textColor="@color/colorPrimaryDark"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <CheckBox
+                android:textSize="12dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:theme="@style/MyCheckbox"
+                android:fontFamily="@font/seguisb"
+                android:text="Remember Me" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+            <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/shapelogin"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="@dimen/_222sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:orientation="vertical">
+            <Button android:textSize="@dimen/_14sdp"
+                android:id="@+id/sign_upBtn"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:textColor="@color/colorWhite"
+                android:padding="@dimen/_5sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:background="@color/colorPrimaryDark"
+                android:fontFamily="@font/seguisb"
+                android:textAllCaps="false"  />
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="or" />
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/shapelogin"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="@dimen/_222sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_gravity="center"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:src="@drawable/ic_icon_facebook"/>
+            <Button android:textSize="@dimen/_14sdp"
+
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@color/colorWhite"
+                android:padding="@dimen/_5sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+
+                android:layout_marginRight="10dp"
+
+                android:text="Sign in with Facebook"
+                android:fontFamily="@font/seguisb"
+                android:textAllCaps="false"  />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/shapelogin"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="@dimen/_222sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_gravity="center"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:src="@drawable/ic_icon_google"/>
+            <Button
+                android:textSize="@dimen/_14sdp"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@color/colorWhite"
+                android:padding="@dimen/_5sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Sign in with Google"
+                android:fontFamily="@font/seguisb"
+                android:textAllCaps="false"  />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                android:layout_width="@dimen/_222sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:orientation="horizontal">
+        <TextView
+                android:textSize="@dimen/_13sdp"
+                android:fontFamily="@font/seguisb"
+                android:textColor="@color/colorPrimaryDark"
+            android:layout_gravity="center_vertical"
+            android:textAlignment="center"
+                android:id="@+id/move_sign_up_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+                android:text="@string/already_account" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

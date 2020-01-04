@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Givol</string>
+    <string name="sign_up">Don\'t have an account?Signup</string>
+    <string name="already_account">Already have an account?SignIn</string>
+    <array name="drawertitles">
+        <item>HOME</item>
+        <item>SPECIAL_OFFER</item>
+        <item>MOST POPULAR</item>
+        <item>RECENT</item>
+        <item>MY LOCATION</item>
+    </array>
+    <array name="drawertitles1">
+        <item>ABOUT APP</item>
+        <item>TERM &amp; CONDITION</item>
+        <item>PRIVACY POLICY</item>
+        <item>LOG OUT</item>
+    </array>
+    <string name="country_prompt">Category</string>
+    <string name="address">1/C 1/D,Road 16,Nikunja-2,Dhaka</string>
+    <string-array name="country_arrays">
+        <item>Malaysia</item>
+        <item>United States</item>
+        <item>Indonesia</item>
+        <item>France</item>
+        <item>Italy</item>
+        <item>Singapore</item>
+        <item>New Zealand</item>
+        <item>India</item>
+    </string-array>
+    <string name="text1">Lorem ipsum dolar sit a met,consecteture adipiscing elit,seddium Lorem ipsum dolar sit a met,consecteture adipiscing elit,seddium</string>
+    <string name="loving_it">I\' in loving it</string>
+    <string name="xl_pizza">XLPizza Plus extra 2 Toppings</string>
+    <string name="xl_pizza_plus">XL PIZZA PLUS EXTRA 2 TOPPING</string>
+    <string name="collect_prizes">How to Collect Prizes</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="special_course">SPECIAL RECIPE COURSE CONTEST</string>
+</resources>
